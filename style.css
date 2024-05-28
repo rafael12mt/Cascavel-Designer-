@@ -1,0 +1,202 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Paleta de cores */
+:root {
+    --primary-color: #000; /* Preto */
+    --secondary-color: #333; /* Cinza escuro */
+    --accent-color: #fff; /* Branco */
+    --background-color: #f8f8f8; /* Fundo claro */
+    --text-color: #333; /* Texto principal */
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+ .logo h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+}
+
+nav {
+   margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+ 
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.btn-contato {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-contato:hover {
+    background-color: var(--text-color);
+}
+
+/* Main Sections */
+section {
+    padding: 60px 0;
+    background-color: var(--background-color);
+}
+
+#home {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: var(--accent-color);
+    text-align: center;
+    position: relative;
+    padding: 120px 0;
+    z-index: 1;
+}
+
+#home:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajustar a opacidade para aumentar a visibilidade */
+    z-index: -1;
+}
+
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.btn-servicos {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 20px 50px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-servicos:hover {
+    background-color: var(--secondary-color);
+}
+
+#servicos, {
+    background-color: var(--accent-color);
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    padding: 20px 0;
+    border-color: #000;
+
+}
+
+#sobre {
+    background-color: var(--background-color);
+    text-align: center;
+    z-index: 1;
+    padding: 30px 0;
+    border-color: #000;
+}
+
+
+#servicos h2, #sobre h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.grid-servicos {
+    display: inline-block;
+    justify-content: ;
+    flex-wrap: ;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+

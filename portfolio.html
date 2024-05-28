@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - CASCAVEL DESIGNER</title>
+    <meta name="description" content="Descrição do portfólio da CASCAVEL DESIGNER">
+    <meta name="keywords" content="palavras-chave, relevantes, para, o, portfólio">
+    <link rel="stylesheet" href="portfolio.css"> </head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://i.ibb.co/s6qsKgZ/Screenshot-20240504-173425-Whats-App.jpg" alt="CASCAVEL DESIGNER">
+                <h1>CASCAVEL DESIGNER</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="info">Info</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Quem Somos?</h2>
+        <p>
+         A Cascavel Designer é formada por um grupo unido de amigos que compartilham uma paixão comum pelo design. Nossa equipe é tudo de bom – somos dedicados, criativos e divertidos. Trabalhamos juntos com entusiasmo e amor pelo que fazemos, colocando todo o nosso carinho em cada arte que criamos. Nossa amizade fortalece nosso trabalho, resultando em designs que não apenas atendem às necessidades dos nossos clientes, mas também refletem o cuidado e a dedicação que colocamos em cada projeto. Na Cascavel Designer, você encontra mais do que profissionais; você encontra pessoas que realmente amam o que fazem.
+        </p>
+      </section>
+
+      <section>
+        <h2>Valores Filosoficos</h2>
+           <p>A Cascavel Designer, nossos valores filosóficos são a base de nosso trabalho. Acreditamos na paixão, dedicação e criatividade em cada projeto. Nossa equipe, formada por amigos, trabalha com integridade, transparência e compromisso com prazos. Valorizamos a inovação, mantendo-nos atualizados com as últimas tendências, e personalizamos nossos serviços para atender às necessidades específicas de cada cliente.
+
+Nosso maior prazer é ver nossos clientes satisfeitos e seus negócios prosperando. Escolher a Cascavel Designer é optar por uma equipe que ama o que faz e coloca carinho em cada arte. Confie em nós para transformar sua marca.</p>
+      </section>
+
+      <section>
+        <h2>
+          Qualidade e Experiência 
+        </h2>
+          <div>
+        <p>
+          Na Cascavel Designer, temos anos de experiência e um compromisso inabalável com a qualidade. Nossa equipe é composta por profissionais altamente qualificados, sempre atualizados com as últimas tendências e tecnologias do design. Cada projeto é tratado com atenção aos detalhes, garantindo resultados excelentes e personalizados. Confie em nossa experiência e qualificação para transformar sua visão em realidade com criatividade e dedicação.
+        </p>
+          </div>
+      </section>
+
+
+        <section>
+            <h2>Prazo e Compromisso</h2>
+            <div>
+            <p>Na Cascavel Designer, nosso compromisso com prazos é uma prioridade absoluta. Entendemos a importância de cumprir datas e garantir a entrega pontual de cada projeto. Nossa equipe dedica atenção máxima ao planejamento e à execução, assegurando que cada etapa seja concluída com eficiência e qualidade. Você pode confiar em nós para entregar resultados excepcionais, sempre dentro do prazo.</p>
+            </div>
+        </section>
+
+        <section id="galeria">
+    <div class="container">
+        <h2>Galeria de Imagens</h2>
+        <div class="grid-galeria">
+            <div class="imagem"><img src="https://i.postimg.cc/JtLMkZHD/Screenshot-20240525-093341-Instagram.jpg
+" alt="arte CASCAVELDESIGNEROFC"></div>
+            <div class="imagem"><img src="https://i.postimg.cc/Hc35bHzV/Screenshot-20240525-093346-Instagram.jpg" alt="arte CASCAVELDESIGNEROFC"></div>
+            <div class="imagem"><img src="https://i.postimg.cc/hfXxQkdt/Screenshot-20240525-093351-Instagram.jpg" alt="arte CASCAVELDESIGNEROFC"></div>
+            <div class="imagem"><img src="https://i.postimg.cc/XBpZF5Xz/Screenshot-20240525-093355-Instagram.jpg" alt="arte CASCAVELDESIGNEROFC"></div>
+            <div class="imagem"><img src="https://i.postimg.cc/6TyTMd5H/Screenshot-20240525-093400-Instagram.jpg" alt="arte CASCAVELDESIGNEROFC"></div>
+            <div class="imagem"><img src="https://i.postimg.cc/QBfxbtLG/Screenshot-20240525-093402-Instagram.jpg
+" alt="arte CASCAVELDESIGNEROFC"></div>
+        </div>
+    </div>
+            <div class="galeria-texto">
+                <p>Lamentamos a qualidade ruim das imagens,pois devido ao nosso editor de código e o hospedagem da imagem reduz drasticamente a qualidade.Caso queiram ver a qualidade real qualidade de nossas artes acesse o nosso Instagram.</p>
+                <a href="https://www.instagram.com/cascavel_designer?igsh=MXNtb3g0OXo2ZTZybA=="><button >Instagram</button></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CASCAVEL DESIGNER. Todos os direitos reservados.</p>
+          
+        </div>
+    </footer>
+  <script>document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.grid-galeria .imagem img');
+    const modal = document.createElement('div');
+    const modalImg = document.createElement('img');
+    const modalClose = document.createElement('span');
+
+    modal.id = 'myModal';
+    modal.style.display = 'none';
+    modal.style.position = 'fixed';
+    modal.style.zIndex = '1000';
+    modal.style.left = '0';
+    modal.style.top = '0';
+    modal.style.width = '100%';
+    modal.style.height = '100%';
+    modal.style.overflow = 'auto';
+    modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+
+    modalImg.style.margin = 'auto';
+    modalImg.style.display = 'block';
+    modalImg.style.width = '80%';
+    modalImg.style.maxWidth = '700px';
+
+    modalClose.style.position = 'absolute';
+    modalClose.style.top = '15px';
+    modalClose.style.right = '35px';
+    modalClose.style.color = '#f1f1f1';
+    modalClose.style.fontSize = '40px';
+    modalClose.style.fontWeight = 'bold';
+    modalClose.style.cursor = 'pointer';
+
+    modalClose.innerHTML = '&times;';
+
+    modal.appendChild(modalImg);
+    modal.appendChild(modalClose);
+    document.body.appendChild(modal);
+
+    images.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+        });
+    });
+
+    modalClose.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+});</script>
+</body>
+</html>
+
